@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suplementów</title>
+    <link rel="stylesheet" href="style.css">
+</head><body>
+    <div class="container">
+        <h1>Kalkulator Suplementów</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label>Płeć:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Mężczyzna</option>
+                    <option value="female">Kobieta</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="weight">Waga (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Wzrost (cm):</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+            <div class="form-group">
+                <label for="activity-level">Poziom aktywności fizycznej:</label>
+                <select id="activity-level" name="activity-level" required>
+                    <option value="sedentary">Siedzący</option>
+                    <option value="lightly-active">Lekko aktywny</option>
+                    <option value="very-active">Bardzo aktywny</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="workouts">Liczba treningów w tygodniu:</label>
+                <input type="number" id="workouts" name="workouts" required>
+            </div>
+            <div class="form-group">
+                <label for="goal">Cel:</label>
+                <select id="goal" name="goal" required>
+                    <option value="weight-loss">Redukcja wagi</option>
+                    <option value="maintenance">Utrzymanie</option>
+                    <option value="muscle-gain">Budowa masy mięśniowej</option>
+                </select>
+            </div>
+            <button type="submit">Oblicz</button>
+        </form>
+        <div id="results">
+            <!-- Wyniki zostaną wyświetlone tutaj -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
